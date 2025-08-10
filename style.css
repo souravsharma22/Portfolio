@@ -1,0 +1,361 @@
+:root{
+    --text-color: #1a1c20;
+    --link-color: #4a76ee;
+    --background-color: #eeeff1;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--background-color);
+    max-width: 1400px;
+    margin: 0 auto;
+}
+a{
+    color: var(--link-color);
+    text-decoration: none;
+}
+
+/* NAVBAR */
+nav{
+    background-color: aliceblue;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 50px;
+    height: 80px;
+
+}
+
+nav .left a{
+    color: var(--text-color);
+    font-size: 22px;
+    font-weight: 600;
+}
+
+nav .right a{
+    color: var(--text-color);
+    margin: 0 10px;
+}
+
+nav .right a:last-child{
+    color: var(--background-color);
+    background-color: var(--text-color);
+    padding: 5px 15px;
+    border-radius: 5px;
+
+}
+
+nav .right a span{
+    margin-left: 5px;
+}
+
+/* SECTION - 1 */
+
+.hero-section{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 50px;
+    margin: 50px 0;
+    margin-bottom: 100px;
+    gap: 50px;
+}
+
+.hero-section .text{
+    flex: 5;
+}
+.hero-section .text h2{
+    font-size: 45px;
+}
+
+.hero-section .text .links{
+    margin-top: 25px;
+}
+.hero-section .text .links a{
+    display: inline-block;
+    padding: 5px 10px;
+    border: 2px solid var(--link-color);
+    border-radius: 5px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    transition: .1s;
+}
+
+.hero-section .text .links a:hover{
+    color: var(--text-color);
+    border: 2px solid var(--text-color);
+}
+
+.hero-section .headshot{
+    flex: 2;
+    display: flex;
+    justify-content: right;
+}
+.hero-section .headshot img{
+    border-radius: 50%;
+    height: 400px;
+    width: 400px;
+}
+
+/* section2 skills */
+
+.skills-section{
+    padding: 0 50px;
+    margin-bottom: 100px;
+}
+
+.skills-section h2{
+    text-align: center;
+    font-size: 35px;
+}
+
+.skills-section h3{
+    text-align: center;
+    font-size: 25px;
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+.skills-section #p1{
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.skills-section .text{
+    padding:0 100px;
+    text-align: center;
+    margin-bottom:20px;
+
+}
+
+.skills-section .cells{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+   
+}
+.skills-section .cells .cell{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border: 1.5px solid rgb(225, 219, 219);
+
+    border-radius: 5px;
+    width: 200px;
+    padding: 10px;
+    margin: 10px;
+    transition: 0.1s;
+}
+
+.skills-section .cells .cell:hover{
+    color: aqua;
+    background-color: black;
+    border: 1.5px solid aqua;
+}
+.skills-section .cells .cell:hover #github {
+    background-color: white; 
+}
+.skills-section .cells .cell:hover #flask {
+    background-color: white; 
+}
+.skills-section .cells .cell:hover #comn {
+    background-color: white; 
+}
+
+.skills-section .cells .cell img{
+    width: 30px;
+    height: 30px;
+    object-fit: contain;
+    border-radius: 2px;
+}
+.skills-section .cells .cell span{
+    font-size: 18px;
+}
+
+
+/* Section -3 Projects */
+
+.work-section{
+    padding: 0 50px;
+}
+.work-section h2{
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 50px;
+}
+
+.work-section .works{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+.work-section .works .work{
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    border: 3px solid var(--link-color);
+    border-radius: 5px;
+    margin-right: 10px;
+    padding: 10px 20px;
+}
+.work-section .works .work .func{
+    margin-top: 15px;
+}
+
+.work-section .works .work .func span{
+    
+    background-color: rgba(168, 210, 188, 0.269);
+    color: rgb(133, 85, 245);
+    border-radius: 10px;
+    padding: 0 5px;
+}
+.work p{
+    margin-top: 10px;
+}
+.work h3{
+    font-size: 20px;
+    font-weight: 600;
+}
+
+/* Section 4 - contact */
+
+#contact{
+    background-color: #1a1c20;
+    color: #eeeff1;
+}
+.contact-section{
+    padding: 0 50px;
+    padding-bottom: 50px;
+    margin-top: 50px;
+    padding-top: 50px;
+    
+}
+
+.contact-section h2{
+    font-size: 30px;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 25px;
+}
+
+.contact-section .group{
+    display: flex;
+    gap: 50px;
+    flex-direction: column;
+}
+.contact-section .group .text{
+    text-align: center;
+}
+.contact-section .group form{
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+.contact-section .group form input,
+.contact-section .group form textarea{
+    font-family: 'Poppins' , sans-serif;
+    border: 2px solid var(--link-color);
+    border-radius: 5px;
+    background-color: transparent;
+    padding: 10px;
+    margin-bottom: 15px;
+    width: 50%;
+    resize: none;
+}
+
+.contact-section .group form button{
+    font-family: 'Poppins' , sans-serif;
+    font-size: 16px;
+    color: white;
+    background-color: var(--link-color);
+    border: 1px solid black;
+    padding: 5px 20px;
+    border-radius: 2px;
+    height: 50px;
+    transition: 0.1s;
+}
+.contact-section .group form button:hover{
+    filter: brightness(0.9);
+}
+
+/*Fotter*/
+footer h4,h5{
+    text-align: center;
+}
+
+
+
+
+/* Mediaqury */
+@media (max-width: 850px) {
+    .hero-section .text h2{
+        font-size: 30px;
+    }
+}
+
+@media (max-width: 700px) {
+    .hero-section{
+        flex-direction: column-reverse;
+    }
+    .hero-section .headshot img{
+        width: 300px;
+        height: 300px;
+    }
+}
+
+@media (max-width: 600px) {
+    /* NAVBAR */
+    nav{
+        padding: 0 20px;
+    }
+
+    nav .right a{
+        font-size: 22px;
+    }
+
+    nav .right a:last-child{
+        color: var(--text-color);
+        background-color: var(--background-color);
+        padding: 0px;
+    }
+
+    nav .right a span{
+        display: none;
+    }
+
+    /* section 1 */
+    .hero-section{
+        padding: 0 20px;
+    }
+    .hero-section .text h2{
+        font-size: 22px;
+    }
+
+    /* section 2 skills */
+    .skills-section{
+        padding: 0 20px;
+
+    }
+    .skills-section .cells .cell span{
+        font-size: 15px;
+    }
+
+    /* section 4 contact */
+    .contact-section{
+        padding: 0 20px;
+    }
+}
